@@ -16,7 +16,7 @@ def generate_courier():
 def generate_courier_not_password():
     login = fake.user_name()
     firstName = fake.name()
-    courier_data_no_password = {
+    courier_data_not_password = {
         "login": login,
         "password": '',
         "name": firstName
@@ -26,10 +26,12 @@ def generate_courier_not_password():
 def generate_courier_not_login():
     password = fake.password()
     firstName = fake.name()
-    courier_data_no_login = {
+    courier_data_not_login = {
         "login": '',
         "password": password,
         "name": firstName
     }
     return courier_data_not_login
+
+
 
